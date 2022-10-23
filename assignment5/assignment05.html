@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Matt Malloy, 10/16 -->
+<head>
+    <title>Assignment 05</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gary's Square Pizza Shop</h1>
+    <H3>If you don't like it, get out..</H3>
+    <form name="order">
+        <h2>Customer Information</h3>
+        <table border="3px">
+            <tr>
+                <td>First Name</td><td><input type=text name="firstName">
+            </tr>
+            <tr>
+                <td>Last Name</td><td><input type=text name="lastName">
+            </tr>
+            <tr>
+                <td>Phone Number</td><td><input type=text name="phoneNumber">
+            </tr>
+            <tr>
+                <td>Street Address</td><td><input type=text name="address">
+            </tr>
+        </table>
+<br>
+            <h2>Pizza Size</h2>
+            <select name="pizza-size" size="3">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+
+<br>
+            <h2>Crust Style</h2>
+            <input type="radio" name="crust" id="thin">Thin
+            <input type="radio" name="crust" id="hand">Hand Tossed
+            <input type="radio" name="crust" id="deep">Deep Dish
+
+
+<div class="yellow">
+            <h2>Toppings</h2>
+            <input type="checkbox" name="top" id="cheese">Cheese
+            <input type="checkbox" name="top" id="sausage">Sausage
+            <input type="checkbox" name="top" id="pepperoni">Pepperoni
+            <input type="checkbox" name="top" id="rabbit">Rabbit Food
+
+            <br>
+            <h2> Delivery </h2>
+            <input type=radio NAME="Delivery Options">Delivery
+            <input type=radio NAME="Delivery Options">Pickup
+            <input type=radio NAME="Delivery Options">Dine-in
+
+<br>
+        <textarea name="special instructions" id="instructions" cols="30" rows="10" placeholder="Enter any special directions."></textarea>
+<br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
