@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 06
+    </title>
+</head>
+<body>
+    <form>
+        <h1 id="title">Welcome to the page!</h1>
+        City: <input type="text" name="c" id="city"><br>
+        Mascot: <input type="text" name="m" id="mascot" onchange="add()"><br>
+        Favorite Team: <input type="text" name="t" id="team">
+
+        <br><br>
+        <input type="checkbox" name="wind"> Wind
+        <br>
+        <input type="checkbox" name="rain"> Rain
+        <br>
+        <input type="checkbox" name="sleet"> Sleet
+        <br>
+        <input type="checkbox" name="snow"> Snow
+        <br><br>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+<script>
+    function add() {
+        var city = document.getElementById("city").value;
+        var mascot = document.getElementById("mascot").value;
+        var result;
+        result = city + " " + mascot;
+        document.getElementById("team").value = result;
+        document.getElementById("title").innerText = "I love " + city + "!"
+    }
+</script>
+</html>
