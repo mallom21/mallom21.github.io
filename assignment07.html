@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 7</title>
+</head>
+<body>
+    <h2>Choose a background color</h2>
+    <button onclick="red()">Make it Red!</button>
+    <button onclick="blue()">Make it Blue!</button>
+    <button onclick="green()">Make it Green!</button>
+    <button onclick="white()">Back to White!</button>
+    <h2>Juniata Calculator</h2>
+    <form>
+        <input type="text" id="inputOne">
+        <button type="button" onclick="add()">+</button>
+        <button type="button" onclick="subtract()">-</button>
+        <button type="button" onclick="divide()">/</button>
+        <button type="button" onclick="multiply()">*</button>
+        <input type="text" id="inputTwo">
+        =
+        <input type="text" id="total">
+        <h2>Summation! You decide where it starts and end.</h2>
+        Where would you like to start the summation? <input type="text" id="sumOne"><br>
+        Where would you like to end the summation? <input type="text" id="sumTwo"><br>
+        <button type="button" onclick="sum()">Lets Go!</button>
+        <p>The sum is <span id="sumNum">0</span>.</p>
+        <br>
+        <button type="reset" value="Reset" onclick="r(), white()">Clear all Entries!</button>
+    </form>
+</body>
+<script>
+    function red() {
+        document.body.style.backgroundColor = "red";
+    }
+    function blue() {
+        document.body.style.backgroundColor = "blue";
+    }
+    function green() {
+        document.body.style.backgroundColor = "green";
+    }
+    function white() {
+        document.body.style.backgroundColor = "white";
+    }
+    function add() {
+        one = document.getElementById("inputOne").value
+        two = document.getElementById("inputTwo").value
+        document.getElementById("total").value = Number(one) + Number(two)
+    }
+    function subtract() {
+        one = document.getElementById("inputOne").value
+        two = document.getElementById("inputTwo").value
+        document.getElementById("total").value = Number(one) - Number(two)
+    }
+    function divide() {
+        one = document.getElementById("inputOne").value
+        two = document.getElementById("inputTwo").value
+        document.getElementById("total").value = Number(one) / Number(two)
+    }
+    function multiply() {
+        one = document.getElementById("inputOne").value
+        two = document.getElementById("inputTwo").value
+        document.getElementById("total").value = Number(one) * Number(two)
+    }
+    function sum() {
+        one = document.getElementById("sumOne").value
+        two = document.getElementById("sumTwo").value
+        document.getElementById("sumNum").innerHTML = Number(one) + Number(two)
+    }
+    function r() {
+        document.getElementById("sumNum").innerHTML = 0
+    }
+</script>
+</html>
