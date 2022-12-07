@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="league.css">
+    <title>League of Legends</title>
+</head>
+<body>
+    <div class="white center" style="padding-top: 10px;">
+        <img src="./assets/logo.svg" alt="Juniata Esports Logo" style="width: auto; height: 100px;">
+        <h1>Juniata Esports | <a href="./index.html">Main Page</a><a href="./staff.html">Our Staff</a><a href="./league.html" class="target">League of Legends</a> |</h1>
+    </div>
+    <form action="">
+        <table class="white">
+            <button type="reset" onclick="title('League of Legends')">Reset Page</button>
+            <tr>
+                <th><h2 id="#changeMe">League of Legends</h2></th>
+            </tr>
+            <tr>
+                <th>
+                    <ul>
+                        <li>League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from over 140 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.</li>
+                        <li>My favorite league champion is Bard</li>
+                    </ul>
+                </th>
+            </tr>
+        </table>
+    </form>
+<form onsubmit="changeTitle();return false">
+    <table class="center white">
+        <tr>
+            <th>Change the game title to whatever you want!</th>
+        </tr>
+        <tr>
+            <th><input type="text" name="title" id="#changeThem" placeholder="Change the Title!"><br><input type="submit" value="Submit"></th>
+        </tr>
+    </table>
+</form>
+</body>
+<script>
+    function changeTitle () {
+        if (document.getElementById("#changeThem").value == "League of Legends") {
+            document.getElementById("#changeMe").innerHTML = "Spooky Easteregg!";
+        }
+        else {
+            document.getElementById("#changeMe").innerHTML = document.getElementById("#changeThem").value;
+        }   
+    }
+    function title(str) {
+        document.getElementById("#changeMe").innerHTML = str;
+    }
+</script>
+</html>

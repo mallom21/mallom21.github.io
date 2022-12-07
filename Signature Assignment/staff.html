@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="staff.css">
+    <title>Team Staff</title>
+</head>
+<body>
+    <div class="white center" style="padding-top: 10px;">
+        <img src="./assets/logo.svg" alt="Juniata Esports Logo" style="width: auto; height: 100px;">
+        <h1>Juniata Esports | <a href="./index.html">Main Page</a><a href="./staff.html" class="target">Our Staff</a><a href="./league.html">League of Legends</a> |</h1>
+    </div>
+    <form action="">
+        <table class="center white">
+            <button type="reset" onclick="change(' ', ' ')">Reset Page</button>
+            <tr>
+                <th>Alex Kurtz</th>
+                <th>Coaches</th>
+                <th>Esports Team Staff</th>
+            </tr>
+            <tr>
+                <th><input type="checkbox" onchange="change('Esports Program Director', 'Alex Kurtz')" name="r" id=""></th>
+                <th><input type="checkbox" name="r" onchange="change('Coaches', 'Overwatch: Jace <br>Valorant: Cvann <br>League: Dahan <br>Smash: IceOnDeck')"></th>
+                <th><input type="checkbox" name="r" onchange="change('Team Staff', 'Social Media Director: Max Prosser<br>Student Community Manager: Samuel Bunker<br>Creative Arts Director: Matt Malloy<br>IT Manager: Dylan Shaneberger<br>Leo Espen.<br>Chloe Webb<br>Anna Schiltz<br>Josh Duggan<br>Tim Kim<br>Kyla Lee<br>Jehan Teveos')"></th>
+            </tr>
+        </table>
+    </form>
+    <table class="center white">
+        <tr>
+            <th id="#title" style="font-size: 35px;"></th>
+        </tr>
+        <tr>
+            <th id="#desc" style="font-size: 25px;"></th>
+        </tr>
+    </table>
+</body>
+<script>
+    function change(title, desc) {
+        document.getElementById("#title").innerHTML = title
+        document.getElementById("#desc").innerHTML = desc
+    }
+</script>
+</html>

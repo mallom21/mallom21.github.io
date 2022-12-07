@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main-style.css">
+    <title>Signature Assignment</title>
+</head>
+<body>
+    <div class="bg-1">
+        <div class="center white" style="padding-top: 10px;">
+            <img src="./assets/logo.svg" alt="Juniata Esports Logo" style="width: auto; height: 100px;">
+            <h1>Juniata Esports | <a href="./index.html" class="target">Main Page</a><a href="./staff.html">Our Staff</a><a href="./league.html">League of Legends</a> |</h1>
+        </div>
+
+        <!-- <div class="arrow" style="position: absolute; left:50%;margin-top:100px;"></div> -->
+
+        <table class="white center" style="margin-top: 320px;">
+            <tr>
+                <th><img src="./assets/m-2.jpg" alt="" onclick="setInner('Our Facility is Located Between Tussey and Terrace.')"></th>
+                <th><img src="./assets/m-7.jpg" alt="" onclick="setInner('We are using Logitech G910s Keyboards with Logitech G502 Mice. We also use Logitech G Pros for our Headsets.')" style="transform: scale(105%); box-shadow: 0 0 20px black;"></th>
+                <th><img src="./assets/m-5.jpg" alt="" onclick="setInner('Our Sponsors are with Kovaaks, Mobalytics, Addice, and Standing Stone Coffee.')"></th>
+            </tr>
+            <tr>
+                <td><p>Overview of Facility</p></td>
+                <td><p>Our Gear</p></td>
+                <td><p>Our Sponsors</p></td>
+            </tr>
+        </table>
+    </div>
+    <div class="spacer"></div>
+    <div class="bg-2">
+        <br><br><br>
+        <h1 class="black center" id="#facility" style="font-family: 'Courier New', Courier, monospace;">@ Juniata College in Huntingdon, PA</h1>
+        <h2 class="black center" style="font-family: 'Courier New', Courier, monospace;" id="write">Click the Images Above</h2>
+        <br><br><br>
+    </div>
+    <div class="spacer"></div>
+</body>
+<script>
+    function setInner(str) {
+        document.getElementById("write").innerHTML = str;
+    }
+</script>
+</html>
+
